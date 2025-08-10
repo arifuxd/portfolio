@@ -25,18 +25,15 @@ const Summery = () => {
                 <p>
                   I specialize in branding, motion graphics, and video editing.
                   With over six years of experience, I have worked across
-                  e-commerce, marketing agency, edtech and IT enabled
+                  e-commerce, marketing agency, edtech, and IT-enabled
                   businesses, delivering impactful designs that connect brands
                   with their audiences. My work blends artistic creativity with
                   strategic thinking to ensure each project is visually
-                  captivating.
-                  <br /> <br />
-                  Over the years, I have collaborated with diverse teams and
-                  clients, adapting to various creative challenges with
-                  precision and innovation.
+                  captivating. I stay ahead of industry trends by continuously
+                  experimenting with emerging tools and techniques.
                 </p>
-                <div className="hero-btns">
-                  <Link href="/contact" className="theme-btn">
+                <div className="hero-btns ">
+                  <Link href="/contact" className="theme-btn hero-btns-about">
                     Get In touch
                     <i>
                       {" "}

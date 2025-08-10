@@ -98,7 +98,11 @@ const Card = ({ category, title, src, animationClass, id }) => {
               width={383}
               height={249}
               sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
+              style={{
+                width: "100%",
+                height: "auto",
+                borderRadius: "10px 10px 0px 0px",
+              }}
               src={src}
               alt="Project"
             />
