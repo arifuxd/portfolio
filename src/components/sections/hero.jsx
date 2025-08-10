@@ -15,8 +15,8 @@ const Hero = () => {
                         <SlideUp>
                             <div className="about-image-part">
                                 <img src={"/images/about/profile.png"} alt="About Me" />
-                                <h2>Bentos Walker</h2>
-                                <p>I am a Web Designer based in san francisco.</p>
+                                <h2>Ariful Islam</h2>
+                                <p>I Am a Creative Visualizer</p>
                                 <div className="about-social text-center">
                                     <ul>
                                         <li><Link href=""><RiFacebookCircleFill size={20} /></Link></li>
