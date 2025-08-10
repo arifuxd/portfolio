@@ -1258,7 +1258,8 @@ html {
 
 .about-image-part {
     text-align: center;
-    padding: 20px;
+    padding: 20px 35px;
+
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 20px;
     box-shadow: rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.036) 0px 3px 5.4px -2px inset;
@@ -1288,6 +1289,7 @@ html {
 
 .about-image-part h2 {
     font-size: 40px;
+    margin-top: 10px;
 }
 
 .about-content-part h2 {
@@ -1317,20 +1319,53 @@ html {
 }
 
 .about-social ul {
-    list-style: none;
+  list-style: none;
+  display: flex;             /* enable flexbox */
+  justify-content: space-between; /* distribute items evenly with space between */
+  padding: 0;
+  margin: 0;
 }
 
 .about-social ul li {
-    display: inline-block;
-    margin: 0px 15px;
+
 }
 
 .about-social ul li a {
-    font-size: 20px;
-    border: 1px solid rgb(255 255 255 / 5%);
-    padding: 10px 12px;
-    border-radius: 10px;
+  font-size: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 10px 12px;
+  border-radius: 10px;
 }
+
+
+
+.about-hero-portfolio {
+     margin-top: 30px;
+
+}
+
+.about-hero-portfolio li {
+  margin-top: 15px;
+  font-size: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  /* Make li a flex container if you want icon + text horizontally */
+  /* But since <a> is flex, li can be block */
+}
+
+.about-hero-portfolio a {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between icon and text */
+  font-size: 16px;
+  color: inherit; /* inherit text color */
+  text-decoration: none;
+}
+
+
+
 
 .about-image-part .dot-shape {
     position: absolute;
@@ -1372,7 +1407,7 @@ html {
 
 
 .scroller__inner {
-    padding-block: 1rem;
+    padding-block: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
