@@ -12,12 +12,12 @@ const ContactForm = () => {
         e.preventDefault();
         setStatus({ message: 'Sending...', error: false });
 
-        emailjs.sendForm(
-            'service_unrw01t', 
-            'template_7vfydtj', 
-            form.current,
-            'Ya2d0PrtZdC9CnMtH'
-        )
+      emailjs.sendForm(
+    process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+    process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+    form.current,
+    process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+)
             .then((result) => {
                 setStatus({ message: 'Message sent successfully!', error: false });
                 form.current.reset();
