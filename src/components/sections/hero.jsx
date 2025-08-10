@@ -10,6 +10,7 @@ import {
   RiDownloadLine,
   RiBehanceFill,
   RiPlayCircleFill,
+  RiInstagramLine,
 } from "@remixicon/react";
 import PartnersMarquee from "./partnersMarquee";
 import SlideUp from "@/utlits/animations/slideUp";
@@ -57,6 +58,15 @@ const Hero = () => {
                     </li>
                     <li>
                       <Link
+                        href="https://instagram.com/arifuxd"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <RiInstagramLine size={20} />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
                         href="https://github.com/arifuxd"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -76,7 +86,7 @@ const Hero = () => {
                         rel="noopener noreferrer"
                       >
                         <RiBehanceFill size={20} />
-                        <span>behance.net/arifuxd</span>
+                        <span>behance.net/arifuxd (Static)</span>
                       </Link>
                     </li>
                     <li>

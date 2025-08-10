@@ -931,6 +931,7 @@ html {
 
 .main-header .logo img {
     width: 120px;
+    height: auto;
 }
 
 .main-header .nice-select .current {
@@ -972,7 +973,9 @@ html {
 }
 
 .main-menu .mobile-logo img {
-    width: 75px;
+    width: 120px;
+    height: auto;
+    margin-left: 15px;
 }
 
 
@@ -3102,3 +3105,4 @@ ul.blog_pagination li a:hover {
 .highlight-color{
     color: var(--primary-color);
 }
+
