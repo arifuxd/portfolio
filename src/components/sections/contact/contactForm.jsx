@@ -1,13 +1,42 @@
-import React from 'react'
+"use client"
+import React, { useRef, useState } from 'react'
 import { RiMailLine } from '@remixicon/react'
 import SlideUp from '@/utlits/animations/slideUp'
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
+    const form = useRef();
+    const [status, setStatus] = useState({ message: '', error: false });
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setStatus({ message: 'Sending...', error: false });
+
+        emailjs.sendForm(
+            'service_unrw01t', 
+            'template_7vfydtj', 
+            form.current,
+            'Ya2d0PrtZdC9CnMtH'
+        )
+            .then((result) => {
+                setStatus({ message: 'Message sent successfully!', error: false });
+                form.current.reset();
+            })
+            .catch((error) => {
+                setStatus({ message: 'Failed to send message. Please try again.', error: true });
+            });
+    };
+
     return (
         <div className="col-lg-8">
             <SlideUp>
                 <div className="contact-form contact-form-area">
-                    <form className="contactForm" >
+                    <form ref={form} className="contactForm" onSubmit={sendEmail}>
+                        {status.message && (
+                            <div className={`alert ${status.error ? 'alert-danger' : 'alert-success'}`}>
+                                {status.message}
+                            </div>
+                        )}
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="form-group">

@@ -36,7 +36,7 @@ Version      : 1.0
 :root {
     --main-color: #9f9f9f;
     --heading-color: #fff;
-    --primary-color: #eb5d3a;
+    --primary-color: #0057ff;
     --lighter-color: #ccc;
     --subtitle-color: #ccc;
     --black-color: #000;
@@ -1258,7 +1258,7 @@ html {
 
 .about-image-part {
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 20px;
     box-shadow: rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.036) 0px 3px 5.4px -2px inset;
@@ -3061,4 +3061,8 @@ ul.blog_pagination li a:hover {
     border-radius: 14px;
     padding: 25px;
     border: 1px solid var(--border-color);
+}
+
+.highlight-color{
+    color: var(--primary-color);
 }

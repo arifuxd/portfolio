@@ -16,7 +16,7 @@ const Hero = () => {
                             <div className="about-image-part">
                                 <img src={"/images/about/profile.png"} alt="About Me" />
                                 <h2>Ariful Islam</h2>
-                                <p>I Am a Creative Visualizer</p>
+                                <p>Creative Visualizer</p>
                                 <div className="about-social text-center">
                                     <ul>
                                         <li><Link href=""><RiFacebookCircleFill size={20} /></Link></li>
@@ -35,16 +35,17 @@ const Hero = () => {
                             <div className="about-content-part">
                                 <p>Hello There!</p>
                                 <h2>
-                                    I’m Bentos Walker, a product designer crafting user-centric design with pixel-perfect precision.
+                                   I’m Ariful Islam, a creative visualizer with 6+ years of experience crafting impactful visuals and multimedia stories.
+
                                 </h2>
                                 <div className="adress-field">
                                     <ul>
-                                        <li className='d-flex align-items-center'><i><RiCircleFill size={14} /></i> Available for Freelancing</li>
+                                        <li className='d-flex align-items-center'><i><RiCircleFill size={14} /></i> Available for Collaboration</li>
                                     </ul>
                                 </div>
-                                <div className="hero-btns">
-                                    <Link href="/contact" className="theme-btn">Download CV <i><RiDownloadLine size={16} /></i> </Link>
-                                </div>
+                <div className="hero-btns">
+                    <a href="/Resume_of_Ariful Islam_Senior Visualizer.pdf" className="theme-btn" download>Download CV <i><RiDownloadLine size={16} /></i> </a>
+                </div>
                             </div>
                         </SlideUp>
                         <SlideUp>
