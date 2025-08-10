@@ -1,16 +1,17 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Preloader from "@/components/ui/preloader";
-import "./global.css"
+import "./global.css";
 import BootstrapForBrowser from "@/components/ui/bootstrapForBrowser";
 import Header from "@/components/sections/header";
 import CallToAction from "@/components/sections/callToAction";
 import Footer from "@/components/sections/footer";
 
-export const metadata = {
-  title: "Bentos - Personal Portfolio Next.js Template",
-  description: "Bentos - Personal Portfolio React Template",
-};
-
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
+  const hideCTA = pathname === "/contact";
+
   return (
     <html lang="en">
       <body suppressHydrationWarning>
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
         <Preloader />
         <Header />
         {children}
-        <CallToAction />
+        {!hideCTA && <CallToAction />}
         <Footer />
       </body>
     </html>

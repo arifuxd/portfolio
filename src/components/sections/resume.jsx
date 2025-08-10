@@ -28,6 +28,7 @@ const Resume = () => {
                                     <Card year={'2013 - 2015'} title={'Bachelor Degree of Information Technology'} institution={'State University bangladesh'} />
                                     <Card year={'2021 - 2024'} title={'Higher secoundery Education'} institution={'Premium College United VC'} />
                                     <Card year={'2020 - 2021'} title={'UI/UX Design'} institution={'Webster College'} />
+                                    <Card year={'2020 - 2021'} title={'UI/UX Design'} institution={'Webster College'} />
                                 </div>
                             </div>
                         </div>
