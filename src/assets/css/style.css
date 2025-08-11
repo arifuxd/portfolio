@@ -1633,7 +1633,7 @@ ul.extra-skills li i {
 .single-project-image .image-wrapper {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 500px !important;
   /* default desktop height */
 }
 

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { RiArrowRightUpLine } from "@remixicon/react";
 import SlideUp from "@/utlits/animations/slideUp";
-import { projectsData } from "@/utlits/fackData/projectData";
+import { projectsData } from "@/utlits/Data/projectData";
 import Image from "next/image";
 
 const animations = ["slideIn", "fadeIn", "scaleUp"];

@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { projectsData } from '@/utlits/fackData/projectData'
+import { projectsData } from '@/utlits/Data/projectData'
 import { notFound } from 'next/navigation'
 import { RiZoomInLine } from '@remixicon/react'
 import Lightbox from "yet-another-react-lightbox"
@@ -43,10 +43,10 @@ const SingleProject = ({ params }) => {
 </div>
 
 
-            <div className="container pt-30">
-                <div className="row">
+            <div className="container pt-30 project-info">
+                <div className="row project-info-row">
                     <div className="col-lg-4" >
-                        <div className="single-project-page-left wow fadeInUp delay-0-2s " >
+                        <div className="single-project-page-left wow fadeInUp delay-0-2s h-100" >
                             <div className="single-info">
                                 <p>Year</p>
                                 <h3>{project.year}</h3>
@@ -73,6 +73,26 @@ const SingleProject = ({ params }) => {
                             ))}
                         </div>
                     </div>
+                    <style jsx global>{`
+                        @media (min-width: 992px) {
+                            .project-info-row {
+                                display: flex;
+                                flex-wrap: wrap;
+                            }
+                            .project-info-row > div {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            .project-info-row .single-project-page-left,
+                            .project-info-row .single-project-page-right {
+                                height: 100%;
+                                flex: 1;
+                            }
+                            .h-100 {
+                                height: 100%;
+                            }
+                        }
+                    `}</style>
                 </div>
                 <div className="row pt-30">
                     {project.gallery.map((image, index) => (

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { RiShakeHandsLine } from "@remixicon/react";
-import { menuList } from "@/utlits/fackData/menuList";
+import { menuList } from "@/utlits/Data/menuList";
 import Image from "next/image";
 
 const Header = () => {
