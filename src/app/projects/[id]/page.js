@@ -138,6 +138,11 @@ const SingleProject = ({ params }) => {
                         close={() => setLightboxOpen(false)}
                         index={lightboxIndex}
                         slides={project.gallery.map(src => ({ src }))}
+                        carousel={{
+                            padding: 0,
+                            spacing: 0,
+                        }}
+                        controller={{ closeOnBackdropClick: true }}
                     />
                 </div>
             </div>

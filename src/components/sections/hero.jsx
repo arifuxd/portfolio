@@ -86,7 +86,7 @@ const Hero = () => {
                         rel="noopener noreferrer"
                       >
                         <RiBehanceFill size={20} />
-                        <span>behance.net/arifuxd (Static)</span>
+                        <span>behance.net/arifuxd</span>
                       </Link>
                     </li>
                     <li>
@@ -96,7 +96,7 @@ const Hero = () => {
                         rel="noopener noreferrer"
                       >
                         <RiPlayCircleFill size={20} />
-                        <span>2D & 3D Motion Graphics</span>
+                        <span>2D & 3D Animation</span>
                       </Link>
                     </li>
                   </ul>
