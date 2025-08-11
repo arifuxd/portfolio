@@ -1,3 +1,9 @@
+export const mediaTypes = {
+  IMAGE: "image",
+  VIDEO: "video",
+  VIMEO: "vimeo",
+};
+
 export const projectsData = [
   {
     id: 1,
@@ -164,6 +170,34 @@ export const projectsData = [
       "/images/projects/static/social-media-16th-december/16th-december-1.jpg",
       "/images/projects/static/social-media-16th-december/16th-december-2.jpg",
       "/images/projects/static/social-media-16th-december/16th-december-3.jpg",
+    ],
+  },
+  {
+    id: 5,
+    src: "/images/projects/static/social-media-16th-december/16th-december-thumbnail.jpg",
+    category: "Static",
+    title: "Video",
+    year: "2024",
+    client: "Rocketwave, Basachange, Padel N Gear",
+    services: "Web Design",
+    description: [
+      "Vellio Properties is dedicated to transforming the rental experience by building strong, transparent connections between landlords and tenants. The project focused on developing a brand presence that reflects the company’s commitment to trust, efficiency, and customer satisfaction. Through research into the needs and concerns of both landlords and renters, we identified key opportunities to streamline the rental process and differentiate Vellio Properties in a competitive market. This understanding shaped the foundation for a cohesive brand identity that communicates professionalism and reliability.",
+      "The brand strategy centered on positioning Vellio Properties as a trusted partner in every stage of the rental journey. Creative exploration included the development of visual themes that conveyed transparency, warmth, and efficiency, supported by a modern and approachable design language. From refining color palettes to designing a logo that symbolizes trust and connection, every element was crafted to resonate with the target audience. The result is a brand identity that not only captures Vellio Properties’ values but also enhances its ability to deliver exceptional rental solutions.",
+    ],
+
+    coverImage:
+      "/images/projects/static/social-media-16th-december/16th-december-cover.jpg",
+    gallery: [
+      {
+        type: mediaTypes.VIMEO,
+        id: "1109013905", // Replace with your actual Vimeo video ID
+        thumbnail: "/videos/video-preview.png",
+      },
+      {
+        type: mediaTypes.VIMEO,
+        id: "1109013970", // Replace with your actual Vimeo video ID
+        thumbnail: "/videos/video-preview.png",
+      },
     ],
   },
 ];
