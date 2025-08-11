@@ -9,7 +9,7 @@ const VimeoModal = ({ isOpen, onClose, videoId }) => {
       <div className="vimeo-modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="vimeo-container">
           <iframe
-            src={`https://player.vimeo.com/video/${videoId}?autoplay=1&title=0&byline=0&portrait=0`}
+            src={`https://player.vimeo.com/video/${videoId}?autoplay=1&title=0&byline=0&portrait=0&controls=1&quality=1&speed=1&transparent=0&dnt=1`}
             width="100%"
             height="100%"
             frameBorder="0"
