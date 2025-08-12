@@ -3002,6 +3002,35 @@ ul.blog_pagination li a:hover {
 .hero-btns-about {
   margin-bottom: 20px;
 }
-.about-image-part {
-  flex: 1;
+
+.skill-card {
+  transition: all 0.5s;
+  background-color: #121214;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+.skill-card:hover {
+  border-color: #0057ff !important;
+}
+
+.skill-hover-bg {
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.skill-title {
+  transition: color 0.3s;
+}
+
+.shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+  z-index: 1;
+  pointer-events: none;
 }

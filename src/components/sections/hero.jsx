@@ -109,7 +109,7 @@ const Hero = () => {
           <div className="col-lg-8">
             <SlideUp>
               <div className="about-content-part">
-                <p>Hello There!</p>
+                <p>Hello There!👋</p>
                 <h2>
                   I’m Ariful Islam, a creative visualizer with 6+ years of
                   experience crafting impactful visuals and multimedia stories.
