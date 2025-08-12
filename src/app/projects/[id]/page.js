@@ -235,11 +235,23 @@ const SingleProject = ({ params }) => {
                             transform: scale(1.2); /* Slightly zoom the video preview */
                         }
                         /* Video hover effects */
-                        .gallery-image-wrapper:has(.video-preview):hover .thumbnail-image {
-                            opacity: 0;
+                        /* Video hover effects only for desktop */
+                        @media (min-width: 1024px) {
+                            .gallery-image-wrapper:has(.video-preview):hover .thumbnail-image {
+                                opacity: 0;
+                            }
+                            .gallery-image-wrapper:has(.video-preview):hover .video-preview {
+                                opacity: 1;
+                            }
                         }
-                        .gallery-image-wrapper:has(.video-preview):hover .video-preview {
-                            opacity: 1;
+                        /* Ensure video preview stays hidden on mobile/tablet */
+                        @media (max-width: 1023px) {
+                            .video-preview {
+                                display: none;
+                            }
+                            .thumbnail-image {
+                                opacity: 1 !important;
+                            }
                         }
                         .gallery-overlay {
                             position: absolute;

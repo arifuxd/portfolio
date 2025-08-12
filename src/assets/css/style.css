@@ -388,7 +388,7 @@ html {
 
 .section-title p {
   font-size: 16px;
-  padding: 0px 300px;
+  padding: 0px 250px;
 }
 
 .section-title h2 span {
@@ -1633,7 +1633,7 @@ ul.extra-skills li i {
 .single-project-image .image-wrapper {
   position: relative;
   width: 100%;
-  height: 500px !important;
+  height: 500px;
   /* default desktop height */
 }
 
@@ -3001,4 +3001,7 @@ ul.blog_pagination li a:hover {
 
 .hero-btns-about {
   margin-bottom: 20px;
+}
+.about-image-part {
+  flex: 1;
 }

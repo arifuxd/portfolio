@@ -940,7 +940,7 @@ Version      : 1.0
     align-items: center;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 
@@ -1102,14 +1102,14 @@ Version      : 1.0
 
 @media only screen and (max-width: 375px) {
   .project-item.style-two .project-content {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
 @media only screen and (max-width: 479px) {
   .project-item.style-two .project-content h3 {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 
@@ -1291,21 +1291,24 @@ Version      : 1.0
 
 @media (max-width: 1024px) {
   .single-project-image .image-wrapper {
-    height: 280px;
+    width: 100%;
+    height: 350px;
     /* tablet height */
   }
 }
 
 @media (max-width: 768px) {
   .single-project-image .image-wrapper {
-    height: 220px;
+    width: 100%;
+    height: 200px;
     /* mobile height */
   }
 }
 
 @media (max-width: 480px) {
   .single-project-image .image-wrapper {
-    height: 180px;
+    width: 100%;
+    height: 160px;
     /* small mobile height */
   }
 }
