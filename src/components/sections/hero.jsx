@@ -112,7 +112,8 @@ const Hero = () => {
                 <p>Hello There!👋</p>
                 <h2>
                   I’m Ariful Islam, a creative visualizer with 6+ years of
-                  experience crafting impactful visuals and multimedia stories.
+                  experience crafting impactful visuals. Passionate about
+                  blending creativity with strategy.
                 </h2>
                 <div className="adress-field">
                   <ul>
