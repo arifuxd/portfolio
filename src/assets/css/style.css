@@ -1182,6 +1182,32 @@ html {
   padding-bottom: 15px;
 }
 
+/* Make columns equal height in the about page summary section */
+.about-single-area .row {
+  align-items: stretch;
+}
+
+.about-single-area .col-lg-4,
+.about-single-area .col-lg-8 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Stretch the SlideUp (motion.div) wrapper to fill the column */
+.about-single-area .col-lg-4 > * {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+/* Ensure the left card fills the available height */
+.about-single-area .col-lg-4 .about-image-part {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .hero-content .job {
   display: inline-block;
   background-color: #f5f5f5;
