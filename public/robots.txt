@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://arifuxd.com/sitemap.xml
+Sitemap: https://arifuxd.online/sitemap.xml
