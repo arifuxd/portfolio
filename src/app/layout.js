@@ -57,6 +57,39 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Ariful Islam (arifuxd)",
+              "url": "https://arifuxd.online",
+              "image": "https://arifuxd.online/images/ariful-islam-profile-photo.png", // Your profile image URL
+              "sameAs": [
+                "https://facebook.com/arifuxd",
+                "https://www.linkedin.com/in/arifuxd",
+                "https://twitter.com/arifuxd",
+                "https://github.com/arifuxd"
+              ],
+              "jobTitle": "Creative Visualizer & Branding Expert",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "DiziShore",
+              },
+              "description": "Creative Visualizer, Branding & Communication Specialist with expertise in graphics design, motion graphics, video editing, and digital branding.",
+              "email": "mailto:arifofficial00@gmail.com",
+              "telephone": "+8801990004984",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Dhaka",
+                "addressCountry": "Bangladesh"
+              }
+            }),
+          }}
+        />
+      </head>
       <body suppressHydrationWarning>
         <RootLayoutClient>{children}</RootLayoutClient>
       </body>
