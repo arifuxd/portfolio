@@ -1481,6 +1481,11 @@ html {
   padding-bottom: 15px;
 }
 
+/* Ensure vertical spacing between service rows equals typical horizontal gutter */
+.services-area .row {
+  row-gap: 30px;
+}
+
 .service-item {
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1502,8 +1507,9 @@ html {
 }
 
 .service-item i {
-  font-size: 60px;
-  color: #999;
+  font-size: 40px;
+  color: var(--primary-color);
+  font-weight: 300;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -1523,6 +1529,94 @@ html {
 .service-item:hover .details-btn {
   color: var(--black-color);
   background: var(--primary-color);
+}
+
+/* Modern Service Card */
+.service-item.modern {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.service-item.modern:before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 18px;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 87, 255, 0.6),
+    rgba(0, 255, 200, 0.4),
+    rgba(255, 255, 255, 0.15)
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.service-item.modern .service-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 42px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  /* border: 1px solid rgba(255, 255, 255, 0.06); */
+
+  transform-style: preserve-3d;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.service-item.modern:hover .service-icon {
+  transform: translateY(-6px) rotateX(10deg) rotateY(-6deg);
+}
+
+.service-item.modern h4 {
+  color: #fff;
+  margin: 10px 0 10px;
+}
+
+.service-item.modern p {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.service-item.modern .shimmer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 40%,
+    transparent 60%
+  );
+  transform: translateX(-100%);
+  animation: shimmer-slide 2.2s infinite;
+}
+
+@keyframes shimmer-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
 }
 
 /*

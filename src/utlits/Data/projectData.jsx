@@ -8,11 +8,11 @@ export const projectsData = [
   {
     id: 1,
     src: "/images/projects/static/cricket8/cricket8-thumbnail.png",
-    category: "Static",
+    category: "Brand Style Guide",
     title: "Cricket8 Brand Style Guide",
     year: "2023",
     client: "Cricket8",
-    services: "Brand Style Guide",
+    software: "Illustrator & Photoshop",
     description: [
       "Cricket8 required a refreshed brand identity to strengthen its presence in the cricket news and analysis space. The project began with a clear goal: to create a Brand Style Guideline that modernized the visual identity while staying true to the brand’s credibility and authority. Comprehensive research was conducted to understand the target audience, exploring their preferences, expectations, and engagement habits. This was paired with a detailed analysis of competitors and market trends, revealing opportunities for Cricket8 to stand out and connect more meaningfully with its community.",
       "With insights in hand, we developed a clear brand strategy by defining Cricket8’s unique selling proposition and core values, focusing on delivering insightful, reliable, and engaging cricket content. The creative process included mood board development to capture the intended tone and direction, followed by the exploration of multiple logo concepts. Each concept reflected different aspects of the brand’s personality, with the final design chosen for its ability to encapsulate Cricket8’s essence and resonate with its audience. This cohesive approach ensured the new brand identity would be both visually striking and strategically aligned.",
@@ -74,11 +74,11 @@ export const projectsData = [
   {
     id: 2,
     src: "/images/projects/static/vellio-properties/vellio-properties-thumbnail.png",
-    category: "Static",
+    category: "Brand Style Guide",
     title: "Vellio Properties Brand Style Guide",
     year: "2024",
     client: "Vellio Properties",
-    services: "Brand Style Guide",
+    software: "Illustrator & Photoshop",
     description: [
       "Vellio Properties is dedicated to transforming the rental experience by building strong, transparent connections between landlords and tenants. The project focused on developing a brand presence that reflects the company’s commitment to trust, efficiency, and customer satisfaction. Through research into the needs and concerns of both landlords and renters, we identified key opportunities to streamline the rental process and differentiate Vellio Properties in a competitive market. This understanding shaped the foundation for a cohesive brand identity that communicates professionalism and reliability.",
       "The brand strategy centered on positioning Vellio Properties as a trusted partner in every stage of the rental journey. Creative exploration included the development of visual themes that conveyed transparency, warmth, and efficiency, supported by a modern and approachable design language. From refining color palettes to designing a logo that symbolizes trust and connection, every element was crafted to resonate with the target audience. The result is a brand identity that not only captures Vellio Properties’ values but also enhances its ability to deliver exceptional rental solutions.",
@@ -128,11 +128,11 @@ export const projectsData = [
   {
     id: 3,
     src: "/images/projects/static/social-media-saas/saas-thumbnail.jpg",
-    category: "Static",
+    category: "Social Media Creative",
     title: "Saas Social Media Creative",
     year: "2024",
     client: "Rocketwave",
-    services: "Graphic Design",
+    software: "Graphic Design",
     description: [
       "Vellio Properties is dedicated to transforming the rental experience by building strong, transparent connections between landlords and tenants. The project focused on developing a brand presence that reflects the company’s commitment to trust, efficiency, and customer satisfaction. Through research into the needs and concerns of both landlords and renters, we identified key opportunities to streamline the rental process and differentiate Vellio Properties in a competitive market. This understanding shaped the foundation for a cohesive brand identity that communicates professionalism and reliability.",
       "The brand strategy centered on positioning Vellio Properties as a trusted partner in every stage of the rental journey. Creative exploration included the development of visual themes that conveyed transparency, warmth, and efficiency, supported by a modern and approachable design language. From refining color palettes to designing a logo that symbolizes trust and connection, every element was crafted to resonate with the target audience. The result is a brand identity that not only captures Vellio Properties’ values but also enhances its ability to deliver exceptional rental solutions.",
@@ -154,11 +154,11 @@ export const projectsData = [
   {
     id: 4,
     src: "/images/projects/static/social-media-16th-december/16th-december-thumbnail.jpg",
-    category: "Static",
+    category: "Social Media Creative",
     title: "16th December Banner",
     year: "2024",
     client: "Rocketwave, Basachange, Padel N Gear",
-    services: "Web Design",
+    software: "Web Design",
     description: [
       "Vellio Properties is dedicated to transforming the rental experience by building strong, transparent connections between landlords and tenants. The project focused on developing a brand presence that reflects the company’s commitment to trust, efficiency, and customer satisfaction. Through research into the needs and concerns of both landlords and renters, we identified key opportunities to streamline the rental process and differentiate Vellio Properties in a competitive market. This understanding shaped the foundation for a cohesive brand identity that communicates professionalism and reliability.",
       "The brand strategy centered on positioning Vellio Properties as a trusted partner in every stage of the rental journey. Creative exploration included the development of visual themes that conveyed transparency, warmth, and efficiency, supported by a modern and approachable design language. From refining color palettes to designing a logo that symbolizes trust and connection, every element was crafted to resonate with the target audience. The result is a brand identity that not only captures Vellio Properties’ values but also enhances its ability to deliver exceptional rental solutions.",
@@ -174,29 +174,38 @@ export const projectsData = [
   },
   {
     id: 5,
-    src: "/images/projects/static/social-media-16th-december/16th-december-thumbnail.jpg",
-    category: "Static",
-    title: "Video",
+    src: "/images/projects/3d-animation/3d-thumbnail.jpg",
+    category: "3D Animation",
+    title: "3D Animation",
     year: "2024",
-    client: "Rocketwave, Basachange, Padel N Gear",
-    services: "Web Design",
+    client: "University Assignments",
+    software: "Blender & Cinema 4D",
     description: [
       "Vellio Properties is dedicated to transforming the rental experience by building strong, transparent connections between landlords and tenants. The project focused on developing a brand presence that reflects the company’s commitment to trust, efficiency, and customer satisfaction. Through research into the needs and concerns of both landlords and renters, we identified key opportunities to streamline the rental process and differentiate Vellio Properties in a competitive market. This understanding shaped the foundation for a cohesive brand identity that communicates professionalism and reliability.",
       "The brand strategy centered on positioning Vellio Properties as a trusted partner in every stage of the rental journey. Creative exploration included the development of visual themes that conveyed transparency, warmth, and efficiency, supported by a modern and approachable design language. From refining color palettes to designing a logo that symbolizes trust and connection, every element was crafted to resonate with the target audience. The result is a brand identity that not only captures Vellio Properties’ values but also enhances its ability to deliver exceptional rental solutions.",
     ],
 
-    coverImage:
-      "/images/projects/static/social-media-16th-december/16th-december-cover.jpg",
+    coverImage: "/images/projects/3d-animation/3d-cover.jpg",
     gallery: [
       {
         type: mediaTypes.VIMEO,
-        id: "1109013905", // Replace with your actual Vimeo video ID
-        thumbnail: "/videos/video-preview.png",
+        id: "1109013825",
+        thumbnail: "/images/projects/3d-animation/3d-thumb-01.jpg",
       },
       {
         type: mediaTypes.VIMEO,
-        id: "1109013970", // Replace with your actual Vimeo video ID
-        thumbnail: "/videos/video-preview.png",
+        id: "1109013905",
+        thumbnail: "/images/projects/3d-animation/3d-thumb-02.jpg",
+      },
+      {
+        type: mediaTypes.VIMEO,
+        id: "1109013970",
+        thumbnail: "/images/projects/3d-animation/3d-thumb-03.jpg",
+      },
+      {
+        type: mediaTypes.VIMEO,
+        id: "1109014026",
+        thumbnail: "/images/projects/3d-animation/3d-thumb-04.jpg",
       },
     ],
   },

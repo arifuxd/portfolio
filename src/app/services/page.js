@@ -8,7 +8,7 @@ const Service = () => {
         <>
             <ServiceGrid />
             <SkillsSection />
-            <Pricing />
+            {/* <Pricing /> */}
         </>
     )
 }

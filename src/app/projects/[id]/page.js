@@ -66,8 +66,8 @@ const SingleProject = ({ params }) => {
                                 <h3>{project.client}</h3>
                             </div>
                             <div className="single-info">
-                                <p>Services</p>
-                                <h3>{project.services}</h3>
+                                <p>Software</p>
+                                <h3>{project.software}</h3>
                             </div>
                             <div className="single-info">
                                 <p>Project</p>
@@ -259,7 +259,7 @@ const SingleProject = ({ params }) => {
                             left: 0;
                             right: 0;
                             bottom: 0;
-                            background: rgba(0, 0, 0, 0.6);
+                            background: rgba(0, 0, 0, 0.3);
                             display: flex;
                             align-items: center;
                             justify-content: center;
