@@ -1,5 +1,5 @@
 import React from 'react'
-import Portfolio from '../../components/sections/portfolio'
+import Portfolio from '@/components/sections/portfolio'
 
 const Works = () => {
     return (
