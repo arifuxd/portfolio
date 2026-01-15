@@ -10,14 +10,31 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+<<<<<<< HEAD
     "@remixicon/react": "^4.2.0",
+=======
+    "@portabletext/react": "^6.0.2",
+    "@remixicon/react": "^4.2.0",
+    "@sanity/image-url": "^2.0.2",
+    "@sanity/orderable-document-list": "^1.4.2",
+    "@sanity/vision": "^3.99.0",
+>>>>>>> b38fc46 (Added Sanity for Project Data Management)
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.18.2",
     "lottie-react": "^2.4.1",
     "next": "14.2.28",
+<<<<<<< HEAD
     "react": "^18",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.5",
+=======
+    "next-sanity": "^9.12.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-fast-marquee": "^1.6.5",
+    "sanity": "^3.99.0",
+    "sanity-plugin-media": "^4.1.1",
+>>>>>>> b38fc46 (Added Sanity for Project Data Management)
     "swiper": "^11.1.9",
     "yet-another-react-lightbox": "^3.25.0"
   }
