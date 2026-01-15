@@ -5,6 +5,8 @@ import SkillsSection from '@/components/sections/skills'
 
 import { getProjects, getSkills, getCategories } from '@/utlits/sanity';
 
+export const revalidate = 60;
+
 const Home = async () => {
     const projects = await getProjects();
     const skills = await getSkills();
