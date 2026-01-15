@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { skills } from "@/utlits/Data/skillsData";
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -26,7 +26,7 @@ const itemVariants = {
   },
 };
 
-export default function SkillsSection() {
+export default function SkillsSection({ skills = [] }) {
   return (
     <section className="py-15">
       <motion.div

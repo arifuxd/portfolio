@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { RiArrowRightUpLine } from "@remixicon/react";
 import SlideUp from "@/utlits/animations/slideUp";
-import { projectsData } from "@/utlits/Data/projectData";
 import Image from "next/image";
+import { urlFor } from "@/utlits/sanity";
 
 const animations = ["slideIn", "fadeIn", "scaleUp"];
 
@@ -13,7 +13,7 @@ const getRandomAnimation = () => {
   return animations[randomIndex];
 };
 
-const Portfolio = ({ className }) => {
+const Portfolio = ({ className, projects = [], categories = [] }) => {
   const [category, setCategory] = useState("All");
   const [animationClass, setAnimationClass] = useState("");
 
@@ -23,19 +23,13 @@ const Portfolio = ({ className }) => {
     setAnimationClass(randomAnimation);
   };
 
-  // ------ filter unique category
-  const filteredCategory = ["All"];
-  projectsData.forEach(({ category }) => {
-    if (!filteredCategory.includes(category)) {
-      filteredCategory.push(category);
-    }
-  });
-  // ------ filter unique category
+  // Extract category titles for filtering
+  const allCategories = ["All", ...categories.map(c => c.title)];
 
   const filteredProjects =
     category === "All"
-      ? projectsData
-      : projectsData.filter((image) => image.category === category);
+      ? projects
+      : projects.filter((project) => project.category === category);
 
   return (
     <section id="portfolio" className={`projects-area ${className}`}>
@@ -56,9 +50,9 @@ const Portfolio = ({ className }) => {
           </div>
           <SlideUp>
             <ul className="project-filter filter-btns-one justify-content-left pb-15">
-              {filteredCategory.map((item, id) => (
+              {allCategories.map((item, index) => (
                 <li
-                  key={id}
+                  key={index}
                   onClick={() => handleCategoryClick(item)}
                   className={item === category ? "current" : ""}
                 >
@@ -68,13 +62,13 @@ const Portfolio = ({ className }) => {
             </ul>
           </SlideUp>
           <div className="row project-masonry-active overflow-hidden">
-            {filteredProjects.map(({ category, id, src, title }) => (
+            {filteredProjects.map((project) => (
               <Card
-                key={id}
-                id={id}
-                category={category}
-                src={src}
-                title={title}
+                key={project._id}
+                id={project.slug}
+                category={project.category}
+                src={urlFor(project.coverImage).url()}
+                title={project.title}
                 animationClass={animationClass}
               />
             ))}
@@ -90,7 +84,7 @@ export default Portfolio;
 const Card = ({ category, title, src, animationClass, id }) => {
   return (
     <div className={`col-lg-4 col-md-6 item branding game ${animationClass}`}>
-      <SlideUp delay={id}>
+      <SlideUp delay={0}>
         <div className="project-item style-two">
           <div className="project-image">
             <Image
@@ -103,7 +97,7 @@ const Card = ({ category, title, src, animationClass, id }) => {
                 borderRadius: "10px 10px 0px 0px",
               }}
               src={src}
-              alt="Project"
+              alt={title}
             />
             <Link href={`/projects/${id}`} className="details-btn">
               <RiArrowRightUpLine />{" "}
